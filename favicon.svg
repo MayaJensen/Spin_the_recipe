@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 88.15 122.31">
+  <!-- Generator: Adobe Illustrator 30.1.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 136)  -->
+  <defs>
+    <linearGradient id="linear-gradient" x1="47.47" y1="61.34" x2="0" y2="61.34" gradientUnits="userSpaceOnUse">
+      <stop offset=".82" stop-color="#7b3617"/>
+      <stop offset="1" stop-color="#3f1c00"/>
+    </linearGradient>
+  </defs>
+  <rect x="22.38" y="103" width="65.39" height="19.31" fill="#7b3617"/>
+  <path d="M45.11.38H10.43C4.67.38,0,5.71,0,12.3v98.09c0,6.59,4.67,11.93,10.43,11.93h37.04c-3.39-40.65-2.04-81.29-2.36-121.94Z" fill="url(#linear-gradient)"/>
+  <rect x="9.32" y="99.17" width="75.37" height="18.75" rx="9.38" ry="9.38" fill="#fffbf6"/>
+  <rect x="42.13" y="99.17" width="42.56" height="18.75" fill="#fffbf6"/>
+  <rect x="9.32" y=".38" width="78.45" height="109.25" rx="3.92" ry="3.92" fill="#894020" stroke="#551c00" stroke-miterlimit="10" stroke-width=".75"/>
+  <rect x="27.23" y="33.56" width="40.48" height="18.55" rx="7.55" ry="7.55" fill="#fffbf6"/>
+  <polygon points="71.88 .19 71.88 28.8 77.17 21.86 82.46 28.8 82.46 .19 71.88 .19" fill="#bf3000"/>
+  <rect x="25.74" y="84.47" width="43.45" height=".1" fill="none" stroke="#551c00" stroke-miterlimit="10"/>
+  <rect x="31.94" y="90.12" width="33.84" height=".1" fill="none" stroke="#551c00" stroke-miterlimit="10"/>
+</svg>
