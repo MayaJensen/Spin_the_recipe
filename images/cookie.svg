@@ -1,0 +1,13 @@
+<svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="6.19238" cy="17" r="0.5" stroke="black"/>
+<circle cx="8.19238" cy="7" r="0.5" stroke="black"/>
+<circle cx="5.19238" cy="11" r="1.5" fill="black" stroke="black"/>
+<circle cx="17.6924" cy="4.5" r="1" fill="black" stroke="black"/>
+<circle cx="16.6924" cy="0.5" r="0.5" fill="black"/>
+<circle cx="21.6924" cy="5.5" r="0.5" fill="black"/>
+<circle cx="14.1924" cy="2" r="0.5" fill="white" stroke="black"/>
+<circle cx="11.1924" cy="14" r="0.5" stroke="black"/>
+<circle cx="11.1924" cy="20" r="0.5" stroke="black"/>
+<circle cx="16.6924" cy="14.5" r="1" fill="black" stroke="black"/>
+<path d="M14.1924 5.49989C12.1924 5.49989 11.7856 5.0307 11.6928 3.49983C11.7499 3.12167 6.48604 3.67206 3.69241 5.99989C0.692035 8.5 0.133534 11.0244 0.692412 14.4999C1.30776 18.3266 3.51288 20.782 7.19241 21.9999C11.241 23.3399 14.9833 22.2935 17.6924 18.9999C19.7381 16.5128 19.6924 10.9999 19.6924 10.9999C17.8899 10.4345 17.4315 9.71179 17.1924 7.99989C14.4325 8.83276 13.8501 8.21615 14.1924 5.49989Z" stroke="black"/>
+</svg>
