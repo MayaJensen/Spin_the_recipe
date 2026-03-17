@@ -11,18 +11,6 @@ let allRecipes = [];
 let selectedCuisines = [];
 let selectedMeals = [];
 
-// fetch(endpoint)
-//   .then((res) => res.json())
-//   .then((data) => {
-//     allRecipes = data.recipes.filter((recipe) =>
-//       maincategories.includes(recipe.cuisine),
-//     );
-
-//     showCategories(allRecipes);
-//     showSubCategories(allRecipes);
-//     renderRecipes(allRecipes);
-//   });
-
 fetch(endpoint)
   .then((res) => res.json())
   .then((data) => {
@@ -69,7 +57,7 @@ function showCategories(recipes) {
 
     if (recipe) {
       container.innerHTML += `
-        <div class="category" data-cuisine="${category}">
+        <div class="category ${recipe.cuisine == cuisine && "active"}" data-cuisine="${category}">
           <img src="${recipe.image}" alt="${category}">
           <h3>${category}</h3>
         </div>
@@ -96,13 +84,14 @@ function showCategories(recipes) {
 
 // SUBCATEGORIES
 function showSubCategories(recipes) {
+  console.log(mealType);
   subcontainer.innerHTML = "";
 
   subcategories.forEach((subcategory) => {
     const recipe = recipes.find((r) => r.mealType?.includes(subcategory));
 
     subcontainer.innerHTML += `
-      <div class="category" data-meal="${subcategory}">
+      <div class="category ${subcategory == mealType && "active"}" data-meal="${subcategory}">
         <img src="${recipe?.image || "images/placeholder.jpg"}" alt="${subcategory}">
         <h3>${subcategory}</h3>
       </div>
