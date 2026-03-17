@@ -11,16 +11,35 @@ let allRecipes = [];
 let selectedCuisines = [];
 let selectedMeals = [];
 
+// fetch(endpoint)
+//   .then((res) => res.json())
+//   .then((data) => {
+//     allRecipes = data.recipes.filter((recipe) =>
+//       maincategories.includes(recipe.cuisine),
+//     );
+
+//     showCategories(allRecipes);
+//     showSubCategories(allRecipes);
+//     renderRecipes(allRecipes);
+//   });
+
 fetch(endpoint)
   .then((res) => res.json())
   .then((data) => {
-    allRecipes = data.recipes.filter((recipe) =>
-      maincategories.includes(recipe.cuisine),
-    );
+    allRecipes = data.recipes;
 
     showCategories(allRecipes);
     showSubCategories(allRecipes);
-    renderRecipes(allRecipes);
+
+    if (cuisine) {
+      selectedCuisines = [cuisine];
+    }
+
+    if (mealType) {
+      selectedMeals = [mealType];
+    }
+
+    applyFilters();
   });
 
 const maincategories = [
