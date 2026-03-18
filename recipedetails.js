@@ -58,12 +58,12 @@ function showData(recipe) {
 <div class="bottom">
 
   <div class="ingredients">
-    <h2>Ingredients</h2>
+    <h4>Ingredients</h4>
     <div class="ingredients-list"></div>
   </div>
 
   <div class="instructions">
-    <h2>Instructions</h2>
+    <h4>Instructions</h4>
     <div class="instructions-list"></div>
   </div>
 
