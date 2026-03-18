@@ -22,7 +22,7 @@ const subcategories = [
   "Dessert",
   "Snacks",
 ];
-
+// FETCH DATA
 fetch(endpoint)
   .then((res) => res.json())
   .then((data) => {
@@ -68,7 +68,6 @@ function showSubCategories(recipes) {
 
 // MOST POPULAR
 function showPopularRecipes(recipes) {
-  // filtrer så vi kun bruger dine cuisines
   const filteredRecipes = recipes.filter((recipe) =>
     maincategories.includes(recipe.cuisine),
   );

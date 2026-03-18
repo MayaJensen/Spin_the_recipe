@@ -16,8 +16,9 @@ body {
   padding: 20px 40px;
   background: #ffffff;
   box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  height: 150px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -38,9 +39,10 @@ body {
 }
 .hero img {
   width: 600px;
+  margin-top: -100px;
 }
 .hero h3 {
-  margin-top: 20px;
+  margin-top: 40px;
   font-weight: 300;
   font-family: "Hedvig Letters Serif", serif;
 }
