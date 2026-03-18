@@ -22,11 +22,15 @@ const subcategories = [
   "Dessert",
   "Snacks",
 ];
+
+let allRecipes = [];
 // FETCH DATA
 fetch(endpoint)
   .then((res) => res.json())
   .then((data) => {
     const recipes = data.recipes;
+
+    allRecipes = recipes;
 
     showCategories(recipes);
     showSubCategories(recipes);
@@ -123,3 +127,12 @@ function showAllRecipes(recipes) {
     `;
   });
 }
+
+const spinBtn = document.querySelector(".spin-btn");
+
+spinBtn.addEventListener("click", () => {
+  const randomIndex = Math.floor(Math.random() * allRecipes.length);
+  const randomRecipe = allRecipes[randomIndex];
+
+  window.location.href = `recipedetails.html?id=${randomRecipe.id}`;
+});
