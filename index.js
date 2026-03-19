@@ -1,3 +1,6 @@
+function getEndpoint() {
+  return;
+}
 const endpoint = "https://dummyjson.com/recipes";
 
 const container = document.querySelector(".categories");
