@@ -94,24 +94,33 @@ showCategories(recipes);
 Vi har brugt camelCase i JavaScript, fordi det gør koden mere ensartet og lettere at læse.
 
 ---
-# DU ER NÅET HERTIL
+
 ## Kommentarer i koden
 
-Vi har kommenteret de steder i koden, hvor det giver mening.
-Fx ved funktioner, fetch-kald og steder hvor der sker DOM-manipulation.
+Vi har kommenteret steder i koden, hvor det giver mening, og for at forstå sammenhængen.
+
 
 **Eksempel:**
 
 ```javascript
-// Henter opskrifter fra Rest API'et
-async function fetchRecipes() {
-  const res = await fetch(apiURL);
-  const data = await res.json();
-  return data.recipes;
+// SUBCATEGORIES
+function showSubCategories(recipes) {
+  subcategories.forEach((subcategory) => {
+    const recipe = recipes.find((r) => r.mealType.includes(subcategory));
+
+    if (recipe) {
+      subcontainer.innerHTML += `
+        <a href="recipelist.html?mealType=${subcategory}" class="category">
+          <img src="${recipe.image}" alt="${subcategory}">
+          <h3>${subcategory}</h3>
+        </a>
+      `;
+    }
+  });
 }
 ```
 
-Vi har prøvet ikke at skrive kommentarer til helt åbenlyse ting, men kun dér hvor det hjælper forståelsen.
+Vi har prøvet ikke at skrive kommentarer til helt åbenlyse ting, men kun dér hvor det hjælper forståelsen af sammenhængen.
 
 ---
 
@@ -122,15 +131,44 @@ Vi henter data fra et API i JSON-format.
 **Et objekt kan fx se sådan ud:**
 
 ```json
-{
-  "id": 1,
-  "title": "Opskriftsnavn",
-  "description": "Kort beskrivelse",
-  "category": "dessert",
-  "cookTime": 45,
-  "servings": 4,
-  "thumbnail": "billede.jpg"
-}
+ "recipes": [
+    {
+      "id": 1,
+      "name": "Classic Margherita Pizza",
+      "ingredients": [
+        "Pizza dough",
+        "Tomato sauce",
+        "Fresh mozzarella cheese",
+        "Fresh basil leaves",
+        "Olive oil",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Preheat the oven to 475°F (245°C).",
+        "Roll out the pizza dough and spread tomato sauce evenly.",
+        "Top with slices of fresh mozzarella and fresh basil leaves.",
+        "Drizzle with olive oil and season with salt and pepper.",
+        "Bake in the preheated oven for 12-15 minutes or until the crust is golden brown.",
+        "Slice and serve hot."
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 15,
+      "servings": 4,
+      "difficulty": "Easy",
+      "cuisine": "Italian",
+      "caloriesPerServing": 300,
+      "tags": [
+        "Pizza",
+        "Italian"
+      ],
+      "userId": 166,
+      "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
+      "rating": 4.6,
+      "reviewCount": 98,
+      "mealType": [
+        "Dinner"
+      ]
+    },
 ```
 
 ### Felter vi bruger
@@ -139,25 +177,23 @@ Vi henter data fra et API i JSON-format.
 - **title** – opskriftsnavn
 - **description** – beskrivelse af opskriften
 - **category** – opskriftkategori (fx dessert, hovedret, forret)
+- **cusine** - det land opskriften hører under
 - **cookTime** – tilberedningstid i minutter
 - **servings** – antal portioner
 - **thumbnail** – opskriftsbillede
+- **difficulty** - sværhedgraden af opskriften
 
 ---
 
-## Formular og validering
 
-Vi har lavet en formular, hvor brugeren kan indtaste oplysninger.
 
-**HTML-validering:**
 
-- `required` – feltet skal udfyldes
-- `type="email"` – validerer email-format
-- `type="number"` – accepterer kun tal
 
-Det sikrer, at brugeren ikke kan sende formularen, hvis felterne ikke er udfyldt korrekt.
+# DU ER NÅET HERTIL
 
----
+
+
+
 
 ## Git og branches
 
