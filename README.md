@@ -187,38 +187,30 @@ Vi henter data fra et API i JSON-format.
 
 
 
-
-
-# DU ER NÅET HERTIL
-
-
-
-
-
 ## Git og branches
 
 Vi har brugt GitHub til at samarbejde om projektet.
 
 Vi har arbejdet med branches, så vi ikke sad og ændrede i det samme på samme tid.
 
-Vi navngav branchene med feature først og navnet på den, der lavede branchen til sidst.
+Vi navngav branchene med feature først.
 
 ### Eksempler på branches
 
-- `feature-forside-steen`
-- `feature-opskriftsliste-peter`
-- `feature-detaljeside-karsten`
-- `feature-formular-pia`
+- `adjustments`
+- `wheel_and_header`
+- `add actice`
+
 
 ### Workflow
 
-1. Lave en branch med feature-navn og eget navn til sidst
+1. Lave en branch med navn.
 2. Kode en feature
 3. Committe ændringer
 4. Pushe til GitHub
 5. Merge til main når det virkede
 
-Det gjorde det nemmere at holde styr på, hvem der lavede hvad.
+Det gjorde det nemmere at holde styr på, hvad der blev lavet og at man kunne gå tilbage i tidligere versioner. 
 
 ---
 
@@ -231,21 +223,18 @@ Vi har tænkt bæredygtighed ind i projektet ved at holde page weight under 250 
 - Ingen videoer
 - Ingen tunge frameworks
 - Genbruge af kode
-- Optimerede billeder
+
 
 ---
 
 ## Udfordringer undervejs
 
-En af vores udfordringer var at få data fra Rest API’et vist korrekt på siderne.
-Det var også lidt svært at få id med videre i URL’en til detaljesiden.
+En af vores udfordringer var at data fra Rest API’et havde billeder som vi ikke kunne definere en størrelse på. 
+
 
 **Løsninger:**
 
-- Console.logge data undervejs
-- Teste fetch-kald separat
-- Bruge URLSearchParams
-- Dele opgaverne mere tydeligt i gruppen
+- ingen løsning på udfordringen i denne omgang
 
 ---
 
@@ -254,14 +243,14 @@ Det var også lidt svært at få id med videre i URL’en til detaljesiden.
 Hvis vi skulle arbejde videre med projektet, kunne vi forbedre det ved at tilføje:
 
 - Søgefunktion
-- Error handling
-- Loading state
+- "sidst sete" nederst på siden
+- Loading af flere opskrifter ved klik
 
 ---
 
 ## Gruppemedlemmer
 
-- Steen I. Sko
-- Peter Pedal
-- Karsten Lange Løgstrup
-- Pia Planlægger
+- Signe Skriver Lorentzen
+- Tobias Frouvne Vincentz
+- Clara Victoria Muxoll Storkfelt
+- Maya Christine Jensen
